@@ -1,45 +1,47 @@
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
-    <title>ENDOCAMPUS</title>
 
-    <meta property="og:title" content="ENDOCAMPUS campus de Endocrinología, Diabetes y Metabolismo " />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://endocampus2023.com/" />
-    <meta property="og:image" content="https://endocampus2023.com/portada.jpeg" />
-    <meta
-      property="og:description"
-      content="La Asociación Colombiana de Endocrinología, Diabetes y Metabolismo cuenta con un nuevo aliado para la divulgación de información y conciencia sobre la salud endocrina en Colombia. Nuestro sitio web ofrece contenido de calidad y actualizado sobre endocrinología, diabetes y metabolismo para todos los interesados. ¡Únete a nuestra comunidad y juntos promovamos la prevención y el tratamiento de estas enfermedades!"
-    />
-  </head>
-  <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html {
-        font-family: "Inter", sans-serif;
-        position: relative;
-      }
-      html,
-      body {
-        height: 100vh;
-        width: 100%;
-        background-image: url("fondo.jpg");
-        background-size: cover;
-        background-position: center;
-        /* background-color: #1f5a86; */
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+  <title>ENDOCAMPUS</title>
 
-      /* body::after {
+  <meta property="og:title" content="ENDOCAMPUS campus de Endocrinología, Diabetes y Metabolismo " />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://endocampus2023.com/" />
+  <meta property="og:image" content="https://endocampus2023.com/portada.jpeg" />
+  <meta property="og:description"
+    content="La Asociación Colombiana de Endocrinología, Diabetes y Metabolismo cuenta con un nuevo aliado para la divulgación de información y conciencia sobre la salud endocrina en Colombia. Nuestro sitio web ofrece contenido de calidad y actualizado sobre endocrinología, diabetes y metabolismo para todos los interesados. ¡Únete a nuestra comunidad y juntos promovamos la prevención y el tratamiento de estas enfermedades!" />
+</head>
+
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: "Inter", sans-serif;
+      position: relative;
+    }
+
+    html,
+    body {
+      height: 100vh;
+      width: 100%;
+      background-image: url("fondo.jpg");
+      background-size: cover;
+      background-position: center;
+      /* background-color: #1f5a86; */
+    }
+
+    /* body::after {
         content: "";
         height: 100vh;
         width: 100vw;
@@ -50,122 +52,144 @@
         background-position: center;
         filter: blur(20px);
       } */
-      .banner-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow-x: hidden;
-        flex-direction: column;
-        width: 100%;
-        /* height: 100%; */
-        /* max-width: 480px; */
-        margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
-      }
+    .banner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      flex-direction: column;
+      width: 100%;
+      /* height: 100%; */
+      /* max-width: 480px; */
+      margin: 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
-      .banner-container-top {
-        height:100%
-      }
-      .banner {
-        display: block;
-        /* width: 100vw; */
-        /* height: 100vh; */
-        align-self: center;
-        max-width: 90%;
-        max-height: 50%;
-      }
+    .banner-container-top {
+      height: 100%
+    }
 
-      .logo {padding-top:1vh}
+    .banner {
+      display: block;
+      /* width: 100vw; */
+      /* height: 100vh; */
+      align-self: center;
+      max-width: 90%;
+      max-height: 50%;
+    }
+
+    .logo {
+      padding-top: 1vh
+    }
+
+    .politica-datos {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 10000;
+      background-color: aliceblue;
+      padding: 10px;
+      border-radius: 5px;
+    }
 
 
-      #message {
-        max-height: 80%;
-        overflow: scroll;
-        font-size: 100%;
-        position: absolute;
-        width: 80%;
-        top: 50%;
-    transform: translateY(-50%);
-        /* height: 20%; */
-        z-index: 99999;
-        padding: 3em;
-        text-align: center;
-        display: flex;
+    #message {
+      max-height: 80%;
+      overflow: scroll;
+      font-size: 100%;
+      position: absolute;
+      width: 80%;
+      top: 50%;
+      transform: translateY(-50%);
+      /* height: 20%; */
+      z-index: 99999;
+      padding: 3em;
+      text-align: center;
+      display: flex;
 
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        color: #333;
-        flex-direction: column;
-        background-color: rgba(255, 255, 255, 0.85);
-        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
-        /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
-        box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
-      }
-      #message p {
-        width: 100%;
-        margin-bottom:1em;
-      }
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      color: #333;
+      flex-direction: column;
+      background-color: rgba(255, 255, 255, 0.85);
+      /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+      /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+      box-shadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(255, 255, 255, 0.22) 0px 15px 12px;
+    }
 
-      .close {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 32px;
-        height: 32px;
-        opacity: 0.3;
-      }
-      .close:hover {
-        opacity: 1;
-      }
-      .close:before,
-      .close:after {
-        position: absolute;
-        left: 15px;
-        content: " ";
-        height: 33px;
-        width: 2px;
-        background-color: #333;
-      }
-      .close:before {
-        transform: rotate(45deg);
-      }
-      .close:after {
-        transform: rotate(-45deg);
-      }
-    </style>
-    <script>
-      function closemessage() {
-        document.getElementById("message").style.display = "none";
-      }
-    </script>
-    <a href="https://app.geniality.com.co/organization/63f552d916065937427b3b02/events" target="_self">
-      <div class="banner-container banner-container-top">
-        <!-- <img class="banner" alt="Click to go to ENDOCAMPUS 2023" src="./portada.jpeg" /> -->
-        <img class="banner" alt="Click to go to ENDOCAMPUS 2024" src="./endocampus_titulo.png" />
-        <img class="banner logo" alt="Click to go to ENDOCAMPUS 2024" src="./logo.png" />
-        <img class="banner logo" alt="Click to go to ENDOCAMPUS 2024" src="./ENDOCAMPUS_BOTON.png" />
+    #message p {
+      width: 100%;
+      margin-bottom: 1em;
+    }
 
-      </div>
-    </a>
-    <div class="banner-container ">
-      <div id="message" onclick="closemessage()">
-        <a href="#" class="close" onclick="closemessage()"></a>
-        <h3><b>¡Bienvenido a Endocampus!</b></h3>
-        <p></p>
-        <p>
-          Plataforma de educación médica virtual de la Asociación Colombiana de Endocrinología, Diabetes y Metabolismo
-          -ACE. Aquí encontrará una amplia variedad de simposios, congresos, cursos y material educativo de alta
-          calidad, desarrollado por líderes de opinión en endocrinología.
-        </p>
-        <p></p>
-        <p>
-          El acceso al contenido educativo de esta plataforma tiene un costo de
-          <span style="font-family: arial; font-weight: bold; font-size: 1.1em;color:#ff4500;">$50.000 COP o 15 USD</span>. Esta
-          suscripción tendrá vigencia de un año.
-        </p>
-      </div>
+    .close {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      width: 32px;
+      height: 32px;
+      opacity: 0.3;
+    }
+
+    .close:hover {
+      opacity: 1;
+    }
+
+    .close:before,
+    .close:after {
+      position: absolute;
+      left: 15px;
+      content: " ";
+      height: 33px;
+      width: 2px;
+      background-color: #333;
+    }
+
+    .close:before {
+      transform: rotate(45deg);
+    }
+
+    .close:after {
+      transform: rotate(-45deg);
+    }
+  </style>
+  <script>
+    function closemessage() {
+      document.getElementById("message").style.display = "none";
+    }
+  </script>
+  <a href="https://app.geniality.com.co/organization/63f552d916065937427b3b02/events" target="_self">
+    <div class="banner-container banner-container-top">
+      <!-- <img class="banner" alt="Click to go to ENDOCAMPUS 2023" src="./portada.jpeg" /> -->
+      <img class="banner" alt="Click to go to ENDOCAMPUS 2024" src="./endocampus_titulo.png" />
+      <img class="banner logo" alt="Click to go to ENDOCAMPUS 2024" src="./logo.png" />
+      <img class="banner logo" alt="Click to go to ENDOCAMPUS 2024" src="./ENDOCAMPUS_BOTON.png" />
     </div>
-  </body>
+  </a>
+  <a href="https://asoendocrinocol.dataprotected.co/" target="_blank" class="politica-datos">
+    Política de tratamiento de datos.
+  </a>
+  <div class="banner-container ">
+    <div id="message" onclick="closemessage()">
+      <a href="#" class="close" onclick="closemessage()"></a>
+      <h3><b>¡Bienvenido a Endocampus!</b></h3>
+      <p></p>
+      <p>
+        Plataforma de educación médica virtual de la Asociación Colombiana de Endocrinología, Diabetes y Metabolismo
+        -ACE. Aquí encontrará una amplia variedad de simposios, congresos, cursos y material educativo de alta
+        calidad, desarrollado por líderes de opinión en endocrinología.
+      </p>
+      <p></p>
+      <p>
+        El acceso al contenido educativo de esta plataforma tiene un costo de
+        <span style="font-family: arial; font-weight: bold; font-size: 1.1em;color:#ff4500;">$50.000 COP o 15
+          USD</span>. Esta
+        suscripción tendrá vigencia de un año.
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
